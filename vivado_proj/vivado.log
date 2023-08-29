@@ -1,0 +1,587 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Aug 29 14:10:30 2023
+# Process ID: 7352
+# Current directory: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9304 E:\Penny\graduate\1_1\AAML\Nexys-A7-100T-OOB-2018.2-1\vivado_proj\Nexys-A7-100T-OOB.xpr
+# Log file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/vivado.log
+# Journal file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 29 14:11:37 2023...
+o_proj/Nexys-A7-100T-OOB.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-OOB/proj/temp/PrjAr/_X_' since last save.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'E:/Penny/graduate/repo', nor could it be found using path 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-OOB/repo'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/Penny/graduate/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'BRAM_1' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'BRAM_1' (customized with software release 2018.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'Square_Root' is locked:
+* IP definition 'CORDIC (6.0)' for IP 'Square_Root' (customized with software release 2018.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ddr' is locked:
+* IP definition 'Memory Interface Generator (MIG 7 Series) (4.1)' for IP 'ddr' (customized with software release 2018.2) has a newer minor version in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ClkGen' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'ClkGen' (customized with software release 2018.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:52 . Memory (MB): peak = 1004.840 ; gain = 0.000
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {BRAM_1 ClkGen Square_Root ddr}] -log ip_upgrade.log
+Upgrading 'BRAM_1'
+INFO: [IP_Flow 19-3422] Upgraded BRAM_1 (Block Memory Generator 8.4) from revision 1 to revision 4
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'BRAM_1'...
+Upgrading 'ClkGen'
+INFO: [IP_Flow 19-3422] Upgraded ClkGen (Clocking Wizard 6.0) from revision 1 to revision 6
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ClkGen'...
+Upgrading 'Square_Root'
+INFO: [IP_Flow 19-3422] Upgraded Square_Root (CORDIC 6.0) from revision 14 to revision 16
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Square_Root'...
+Upgrading 'ddr'
+INFO: [IP_Flow 19-1972] Upgraded ddr from Memory Interface Generator (MIG 7 Series) 4.1 to Memory Interface Generator (MIG 7 Series) 4.2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ddr'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:24 ; elapsed = 00:01:00 . Memory (MB): peak = 1096.051 ; gain = 91.211
+export_ip_user_files -of_objects [get_ips {BRAM_1 ClkGen Square_Root ddr}] -no_script -sync -force -quiet
+generate_target all [get_files  {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/BRAM_1/BRAM_1.xci E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ClkGen/ClkGen.xci E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/Square_Root/Square_Root.xci E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ddr/ddr.xci}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'BRAM_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'BRAM_1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'BRAM_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'BRAM_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ClkGen'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ClkGen'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ClkGen'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ClkGen'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Square_Root'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Square_Root'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'Square_Root'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'Square_Root'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Square_Root'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ddr'...
+WARNING: [IP_Flow 19-519] IP 'ddr' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr'...
+generate_target: Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1431.750 ; gain = 317.445
+export_ip_user_files -of_objects [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/BRAM_1/BRAM_1.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ClkGen/ClkGen.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/Square_Root/Square_Root.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ddr/ddr.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/BRAM_1/BRAM_1.xci] -directory E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files/sim_scripts -ip_user_files_dir E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files -ipstatic_source_dir E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/modelsim} {questa=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/questa} {riviera=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/riviera} {activehdl=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ClkGen/ClkGen.xci] -directory E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files/sim_scripts -ip_user_files_dir E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files -ipstatic_source_dir E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/modelsim} {questa=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/questa} {riviera=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/riviera} {activehdl=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/Square_Root/Square_Root.xci] -directory E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files/sim_scripts -ip_user_files_dir E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files -ipstatic_source_dir E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/modelsim} {questa=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/questa} {riviera=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/riviera} {activehdl=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ddr/ddr.xci] -directory E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files/sim_scripts -ip_user_files_dir E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files -ipstatic_source_dir E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/modelsim} {questa=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/questa} {riviera=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/riviera} {activehdl=E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [filemgmt 20-965] The target 'cmodel' is not supported by the file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/BRAM_1/BRAM_1.xci
+WARNING: [filemgmt 20-965] The target 'testbench' is not supported by the file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/BRAM_1/BRAM_1.xci
+WARNING: [filemgmt 20-965] The target 'cmodel' is not supported by the file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ClkGen/ClkGen.xci
+WARNING: [filemgmt 20-965] The target 'testbench' is not supported by the file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ClkGen/ClkGen.xci
+WARNING: [filemgmt 20-965] The target 'cmodel' is not supported by the file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ddr/ddr.xci
+WARNING: [filemgmt 20-965] The target 'testbench' is not supported by the file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/ddr/ddr.xci
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 14:17:33 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 14:17:33 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1574.738 ; gain = 2.969
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61C5EA
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3096.820 ; gain = 1522.082
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/RgbLed.vhd] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/RgbLed.vhd
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Pwm.vhd] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Pwm.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 14:47:59 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 14:47:59 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 3178.910 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61C5EA
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/sSegDemo.vhd] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/sSegDemo.vhd
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/sSegDisplay.vhd] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/sSegDisplay.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Vga.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AccelerometerCtl.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/MouseCtl.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/TempSensorCtl.vhd] -no_script -reset -force -quiet
+remove_files  {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Vga.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AccelerometerCtl.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/MouseCtl.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/TempSensorCtl.vhd}
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/ADXL362Ctrl.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AccelArithmetics.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/LogoDisplay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/MicDisplay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AccelDisplay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/MouseDisplay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/OverlayCtl.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Ps2Interface.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/TWICtl.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/TempDisplay.vhd] -no_script -reset -force -quiet
+remove_files  {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/ADXL362Ctrl.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AccelArithmetics.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/LogoDisplay.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/MicDisplay.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AccelDisplay.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/MouseDisplay.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/OverlayCtl.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Ps2Interface.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/TWICtl.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/TempDisplay.vhd}
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/BRAM_1/BRAM_1.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/SPI_If.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/Square_Root/Square_Root.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/SyncAsync.vhd] -no_script -reset -force -quiet
+remove_files  {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/BRAM_1/BRAM_1.xci E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/SPI_If.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/ip/Square_Root/Square_Root.xci E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/SyncAsync.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:16:53 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:16:53 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 3193.219 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61C5EA
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/FPGAMonitor.vhd] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/FPGAMonitor.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:32:15 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:32:16 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 3193.273 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61C5EA
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/LocalRst.vhd] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/LocalRst.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:41:34 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:41:34 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:46:22 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:46:22 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:50:14 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:50:14 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:52:57 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:52:57 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:56:22 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:56:23 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3207.586 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:58:23 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:58:23 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 15:59:20 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 15:59:21 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 3207.586 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61C5EA
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+add_files -norecurse {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Dbncr.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/RamCntrl.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Ram2Ddr.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/LedBar.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/pdmdes.v E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/ramcntrl.v E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/nexys4ddruserdemo.v E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/top.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AudioDemo.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/pdmser.v E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/dbncr.v E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/PdmSer.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/ledbar.v E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/PdmDes.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/audiodemo.v E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/ram2ddr.v}
+WARNING: [filemgmt 56-12] File 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Dbncr.vhd' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/RamCntrl.vhd' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Ram2Ddr.vhd' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/LedBar.vhd' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/top.vhd' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AudioDemo.vhd' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/PdmSer.vhd' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/PdmDes.vhd' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 16:08:26 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 16:08:26 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 16:11:14 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 16:11:14 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 16:12:08 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 16:12:09 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 3232.117 ; gain = 17.391
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61C5EA
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/top.vhd] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/top.vhd
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AudioDemo.vhd] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/AudioDemo.vhd
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Ram2Ddr.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Dbncr.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/LedBar.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/PdmDes.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/PdmSer.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/RamCntrl.vhd] -no_script -reset -force -quiet
+remove_files  {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Ram2Ddr.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/Dbncr.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/LedBar.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/PdmDes.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/PdmSer.vhd E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.srcs/sources_1/imports/src/hdl/RamCntrl.vhd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 16:20:54 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 16:20:54 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 16:25:07 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 16:25:08 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 16:31:24 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 16:31:24 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 16:32:26 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 16:32:27 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+open_hw_manager
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 3245.203 ; gain = 1.223
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61C5EA
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 29 17:02:08 2023] Launched synth_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/synth_1/runme.log
+[Tue Aug 29 17:02:08 2023] Launched impl_1...
+Run output will be captured here: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/runme.log
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+copy_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3290.621 ; gain = 0.324
+impl_1_copy_1
+set_property target_language Verilog [current_project]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 3300.289 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61C5EA
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+export_ip_user_files -of_objects  [get_files E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/archive_project_summary.txt] -no_script -reset -force -quiet
+remove_files  E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/archive_project_summary.txt
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 29 20:27:39 2023...

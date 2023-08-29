@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Aug 29 17:05:25 2023
+# Process ID: 10412
+# Current directory: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1
+# Command line: vivado.exe -log Nexys4DdrUserDemo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Nexys4DdrUserDemo.tcl -notrace
+# Log file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1/Nexys4DdrUserDemo.vdi
+# Journal file: E:/Penny/graduate/1_1/AAML/Nexys-A7-100T-OOB-2018.2-1/vivado_proj/Nexys-A7-100T-OOB.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Nexys4DdrUserDemo.tcl -notrace
